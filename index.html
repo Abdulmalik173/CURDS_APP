@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome !</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Abdulmalik CRUDS System</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input id="title" type="text" placeholder="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="createBtn" id="">Create <i style="font-size: 14px; margin-left: 2px;" class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="output">
+            <div class="searchBox">
+                <input type="text" id="search" placeholder="search">
+                <div class="btnSearch">
+                    <button id="searchBtn">Search By Title <i style="margin-left: 2px;" class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="categoryBtn">Search By Category <i style="margin-left: 2px;" class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ad</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

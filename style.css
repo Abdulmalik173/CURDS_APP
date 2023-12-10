@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+}
+
+input:foucs {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+.price input {
+    width: 20%;
+}
+
+#total {
+    margin-left: 4px;
+    background-color: crimson;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#total::before {
+    content: 'Totel: ';
+}
+
+button {
+    font-size: 16px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(4, 145, 2);
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(13, 128, 11);
+    color: lightgray;
+}
+
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnSearch button {
+    width: 49.5%;
+    background-color: rgb(85, 85, 204);
+}
+
+.btnSearch button:hover {
+    background-color: rgb(47, 47, 149);
+    color: lightgray;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+table #update {
+    background-color: rgb(85, 85, 204);
+}
+
+table #update:hover {
+    background-color: rgb(47, 47, 149);
+    color: lightgray;
+}
+
+table #delete {
+    background-color: rgb(219, 20, 60);
+}
+
+table #delete:hover{
+    background-color: rgb(155, 14, 42);
+    color: lightgray;
+}
+
+th, td {
+    padding: 5px;
+}
